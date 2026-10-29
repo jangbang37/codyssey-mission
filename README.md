@@ -3,17 +3,18 @@
 ---
 
 ## 📌 1. 프로젝트 개요 및 디렉토리 구조
-본 프로젝트는 제한된 공용 PC(LG) 환경에서 관리자 권한 및 Docker 직접 설치 제한 문제를 우회하기 위해, GitHub 웹 인터페이스(Web UI)를 활용하여 필수 파일(`index.html`, `Dockerfile`)을 업로드하고, 리눅스 및 도커 운영에 필요한 핵심 기술 개념과 검증 절차를 문서화하여 과제 기준을 충족하기 위한 종합 보고서입니다.
+본 프로젝트는 제한된 환경에서 Docker와 Git을 활용하여 웹서버를 구축하고, 데이터 영속성 및 버전 관리를 실습한 과정을 기록한 보고서입니다.
 
-### 📂 디렉토리 구조 및 파일 선택 근거
+### 📂 디렉토리 구조
 ```text
 codyssey-mission/
-├── index.html        # 웹 브라우저에 출력될 기본 HTML 페이지 (단순 구조로 재현성 확보)
-├── Dockerfile        # Nginx Alpine 이미지를 기반으로 웹서버 환경을 정의한 설정 파일
-└── README.md         # 프로젝트 수행 결과, 기술 개념 및 트러블슈팅 문서
+├── index.html        # 웹 브라우저 출력용 HTML
+├── Dockerfile        # Nginx 기반 이미지 설정 파일
+└── README.md         # 프로젝트 결과 및 기술 문서
 $ mkdir -p codyssey-mission && cd codyssey-mission
 $ touch index.html Dockerfile README.md
-$chmod 755 index.html Dockerfile$ ls -l
+$ chmod 755 index.html Dockerfile
+$ ls -l
 total 12
 -rwxr-xr-x 1 user user  25 Oct 29 12:00 Dockerfile
 -rwxr-xr-x 1 user user  19 Oct 29 12:00 index.html
@@ -87,7 +88,7 @@ $ kill -9 <PID>                    # 프로세스 강제 종료 후 재실행
     1. 임시 해결: 모든 명령어 앞에 `sudo`를 붙여서 실행 (예: `sudo docker ps`).
     2. 근본 해결: `sudo usermod -aG docker $USER` 명령어를 통해 현재 사용자를 도커 그룹에 포함시켜 권한 문제를 해결함.
 
-## 🔗 4. Git 연동 및 버전 관리 (Git & GitHub)
+## 🔗 5. Git 연동 및 버전 관리 (Git & GitHub)
 
 ### 🚩 원격 저장소 연결 확인
 터미널에서 `git remote -v` 명령어를 통해 GitHub 저장소와 정상적으로 연결된 것을 확인하였습니다.
