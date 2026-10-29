@@ -98,8 +98,4 @@ $ kill -9 <PID>                    # 프로세스 강제 종료 후 재실행
 origin  https://github.com/jangbang37/codyssey-mission.git (fetch)
 origin  https://github.com/jangbang37/codyssey-mission.git (push)
 
-```bash
-# 실행 결과
-origin  https://github.com/jangbang37/codyssey-mission
-.git (fetch)
-origin  https://github.com/jangbang37/codyssey-mission.git (push)
+
