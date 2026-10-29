@@ -86,3 +86,16 @@ $ kill -9 <PID>                    # 프로세스 강제 종료 후 재실행
 *   **해결:** 
     1. 임시 해결: 모든 명령어 앞에 `sudo`를 붙여서 실행 (예: `sudo docker ps`).
     2. 근본 해결: `sudo usermod -aG docker $USER` 명령어를 통해 현재 사용자를 도커 그룹에 포함시켜 권한 문제를 해결함.
+
+## 🔗 4. Git 연동 및 버전 관리 (Git & GitHub)
+
+### 🚩 원격 저장소 연결 확인
+터미널에서 `git remote -v` 명령어를 통해 GitHub 저장소와 정상적으로 연결된 것을 확인하였습니다.
+<img width="670" height="371" alt="스크린샷 2026-10-29 134017" src="https://github.com/user-attachments/assets/fe4ee647-e7c1-4fd4-a57f-afb28129c91c" />
+
+
+```bash
+# 실행 결과
+origin  https://github.com/jangbang37/codyssey-mission
+.git (fetch)
+origin  https://github.com/jangbang37/codyssey-mission.git (push)
