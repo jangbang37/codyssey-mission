@@ -92,6 +92,8 @@ $ kill -9 <PID>                    # 프로세스 강제 종료 후 재실행
 ### 🚩 원격 저장소 연결 확인
 터미널에서 `git remote -v` 명령어를 통해 GitHub 저장소와 정상적으로 연결된 것을 확인하였습니다.
 <img width="670" height="371" alt="스크린샷 2026-10-29 134017" src="https://github.com/user-attachments/assets/fe4ee647-e7c1-4fd4-a57f-afb28129c91c" />
+### 📸 Git 연동 인증샷
+![인증샷](./screenshot.png)
 
 
 ```bash
