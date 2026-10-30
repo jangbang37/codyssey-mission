@@ -1,0 +1,1 @@
+공용 PC 환경으로 인해 Docker Desktop 설치 및 실행이 불가능하여 docker 명령을 사용할 수 없었습니다. 
